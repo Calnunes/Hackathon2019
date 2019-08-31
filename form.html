@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body style="margin: 30px">
+    <form action="insert.php" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputCity">Student Name</label>
+                <input type="text" class="form-control" name="studentname" id="inputCity" placeholder="Eg: Tom Holland"
+                    required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Class</label>
+                <select id="inputState" class="form-control" name="class" required>
+                    <option selected>Choose...</option>
+                    <option>FE</option>
+                    <option>SE</option>
+                    <option>TE</option>
+                    <option>BE</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Department</label>
+                <select id="inputState" class="form-control" name="dept" required>
+                    <option selected>Choose...</option>
+                    <option>Computers</option>
+                    <option>Information Technology</option>
+                    <option>Electionics</option>
+                    <option>Production</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Topic</label>
+            <input type="text" class="form-control" id="inputTopic" placeholder="Eg: Web Dev, ML" name="topic" required>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Project Domain</label>
+            <select id="inputState" class="form-control" name="domain" required>
+                <option selected>Choose...</option>
+                <option>Web Development</option>
+                <option>Machine Learning</option>
+                <option>Data Structures and Analysis</option>
+                <option>Internet of Things</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Eg: Mumbai" name="city" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control" id="inputState" placeholder="Eg: Maharashtra" name="state"
+                    required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Eg; 400202" name="zip" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Enter link to Presentation</label>
+            <input type="text" class="form-control" id="inputTopic" name="ppt" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputAddress">Enter link to Github Link</label>
+            <input type="text" class="form-control" id="inputTopic" name="github" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputAddress2">Was Research Paper published?</label>
+                <select id="inputState" class="form-control" name="paper" required>
+                    <option selected>Choose...</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>
